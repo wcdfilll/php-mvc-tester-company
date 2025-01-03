@@ -7,7 +7,7 @@ class CustomerController {
     }
 
     # related to /list.php
-    public function listCustomers() {
+    public function listCustomers(): void {
         $page = isset($_GET['page']) ? $_GET['page'] : 1;
         $customers = $this->customerDB->getAllCustomers(page: $page);
         require_once('views/list.php');
@@ -43,13 +43,13 @@ class CustomerController {
             $email = $_POST['email'];
             $address = $_POST['address'];
     
-            $customer = new Customer(id: $id, name: $name, email: $email, address: $address); // Khởi tạo đối tượng Customer với id, name, email, và phone
+            $customer = new Customer(id: $id, name: $name, email: $email, address: $address);
     
-            $this->customerDB->updateCustomer(customer: $customer); // Cập nhật DB
-            header(header: 'Location: index.php?controller=customer&action=list'); // Quay về danh sách
+            $this->customerDB->updateCustomer(customer: $customer);
+            header(header: 'Location: index.php?controller=customer&action=list');
         } else {
             $customer = $this->customerDB->getCustomerById(id: $id);
-            require 'views/edit.php'; // Load giao diện sửa thông tin
+            require_once('views/edit.php');
         }
     }
     # related to /delete.php - maybe run =))))

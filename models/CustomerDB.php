@@ -3,7 +3,7 @@ class CustomerDB{
     private $conn;
 
     public function __construct(){
-        $this->conn = new PDO("mysql:host=localhost;dbname=qlkh_tester_aht", "root", "");
+        $this->conn = new PDO(dsn: "mysql:host=localhost;dbname=qlkh_tester_aht", username: "root", password: "");
     }
     
     public function getAllCustomers($page = 1): array{
