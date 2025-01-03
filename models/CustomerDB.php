@@ -6,10 +6,9 @@ class CustomerDB{
         $this->conn = new PDO(dsn: "mysql:host=localhost;dbname=qlkh_tester_aht", username: "root", password: "");
     }
     
-    public function getAllCustomers($page = 1): array{
-        $offset = ($page - 1) * 6; # để phân page show 6 dữ liệu từ db cho từng trang
-        $stmt = $this->conn->prepare(query: "SELECT * FROM customers LIMIT 6 OFFSET ?");
-        $stmt->execute(params: [$offset]);
+    public function getAllCustomers(): array{
+        $stmt = $this->conn->prepare(query: "SELECT * FROM customers");
+        $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 

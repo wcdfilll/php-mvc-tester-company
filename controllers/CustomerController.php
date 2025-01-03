@@ -8,8 +8,7 @@ class CustomerController {
 
     # related to /list.php
     public function listCustomers(): void {
-        $page = isset($_GET['page']) ? $_GET['page'] : 1;
-        $customers = $this->customerDB->getAllCustomers(page: $page);
+        $customers = $this->customerDB->getAllCustomers();
         require_once('views/list.php');
     }
 
