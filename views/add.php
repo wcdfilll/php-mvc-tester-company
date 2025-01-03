@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thêm khách hàng mới</title>
-    
+
     <link rel="stylesheet" href="views\styles\add.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
                 <input type="text" id="address" name="address" required>
             </div>
             <button type="submit">Thêm khách hàng</button>
-            <a href="index.php?action=list">Quay lại danh sách</a>
+            <a class="back-button" href="index.php?action=list">Quay lại danh sách</a>
         </form>
     </div>
 </body>

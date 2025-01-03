@@ -27,6 +27,9 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-button:hover {
+.button:hover {
     background-color: #007f67;
+}
+.back-button{
+    text-decoration: none;
 }
