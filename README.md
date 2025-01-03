@@ -24,19 +24,19 @@ This project includes the following functionalities:
 The project is organized as follows:
 
 php-mvc-tester-company/
-├── models/
-│   ├── Customer.php
-│   └── CustomerDB.php
-├── views/
-│   ├── list.php
-│   ├── add.php
-│   ├── edit.php
-│   ├── delete.php
-│   └── view.php
-├── controllers/
-│   └── CustomerController.php
-├── index.php
-└── customers.sql (sql export from PHPMyAdmin)
+├── models/                    # Business logic and database interaction
+│   ├── Customer.php           # Defines the Customer class
+│   └── CustomerDB.php         # Contains methods to interact with the database
+├── views/                     # User interface files
+│   ├── list.php               # Displays a paginated list of customers
+│   ├── add.php                # Form to add a new customer
+│   ├── edit.php               # Form to edit customer details
+│   ├── delete.php             # Form to delete a customer
+│   └── view.php               # Displays detailed customer information
+├── controllers/               # Handles user input and orchestrates the workflow
+│   └── CustomerController.php # Controller class for managing customers
+└── index.php                  # Application entry point
+
 ---
 
 ## 🚀 Environment Setup for Testing
