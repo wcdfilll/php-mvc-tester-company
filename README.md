@@ -40,6 +40,6 @@ To test this project, ensure you have the following environment configured:
    ```bash
    git clone https://github.com/your-username/php-mvc-tester-company.git
 
-2. Need download Laragon to run project:
+2. Need download Laragon to run project in path `/www/php-mvc-tester-company`:
    ```bash
    and enjoy it ❤️
