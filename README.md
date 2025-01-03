@@ -8,6 +8,7 @@ A demo repo for a company system built with **PHP**, **MVC (Model-View-Controlle
 ### This project includes the following functionalities:
 - **Class `Customer`**: Represents a customer.
 - **Class `CustomerDB`**: Provides methods to interact with the database.
+- **Class `CustomerController`**: Handles user actions and coordinates the workflow.
 
 ### Pages
 - **`list.php`**: Displays a paginated list of customers (6 customers per page) with their name, email, and address.
@@ -15,8 +16,6 @@ A demo repo for a company system built with **PHP**, **MVC (Model-View-Controlle
 - **`edit.php`**: Contains a form to update customer details.
 - **`delete.php`**: Contains a form to delete a customer.
 - **`view.php`**: Displays detailed information about a customer.
-
-- **Class `CustomerController`**: Handles user actions and coordinates the workflow.
 
 ---
 
