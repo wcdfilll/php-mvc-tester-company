@@ -13,6 +13,17 @@ class CustomerDB{
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getCustomerById($id): Customer|null {
+        $stmt = $this->conn->prepare(query: "SELECT * FROM customers WHERE id = ?");
+        $stmt->execute(params: [$id]);
+        $result = $stmt->fetch(mode: PDO::FETCH_ASSOC);
+
+        if ($result) {
+            return new Customer(id: $result['id'], name: $result['name'], email: $result['email'], address: $result['address']);
+        }
+        return null;
+    }
+
     public function insertCustomer($customer): bool{
         $stmt = $this->conn->prepare(query: "INSERT INTO customers (name, email, address) VALUES (?, ?, ?)");
         return $stmt->execute(params: [$customer->name, $customer->email, $customer->address]);

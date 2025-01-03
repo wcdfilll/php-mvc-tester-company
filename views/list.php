@@ -53,14 +53,13 @@
     <hr>
     <table class="styled-table">
         <tr>
-            <th>ID</th>
             <th>Tên</th>
             <th>Email</th>
             <th>Địa Chỉ</th>
             <th>Thao Tác Thực Hiện</th>
         </tr>
         <tr>
-            <td>Test</td>
+            <td></td>
         </tr>
     </table>
 </body>
