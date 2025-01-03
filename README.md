@@ -23,7 +23,20 @@ This project includes the following functionalities:
 ## 📂 Project Structure
 The project is organized as follows:
 
-
+php-mvc-tester-company/
+├── models/
+│   ├── Customer.php
+│   └── CustomerDB.php
+├── views/
+│   ├── list.php
+│   ├── add.php
+│   ├── edit.php
+│   ├── delete.php
+│   └── view.php
+├── controllers/
+│   └── CustomerController.php
+├── index.php
+└── customers.sql (sql export from PHPMyAdmin)
 ---
 
 ## 🚀 Environment Setup for Testing
