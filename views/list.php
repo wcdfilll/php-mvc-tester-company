@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DANH SÁCH KHÁCH HÀNG</title>
     <link rel="stylesheet" href="views\styles\list.css">
+    <style>
+        .add-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #009879;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .add-button:hover {
+            background-color: #007f67;
+        }
+    </style>
 </head>
 
 <body>
     <h1>DANH SÁCH KHÁCH HÀNG</h1>
     <hr>
+    <a href="index.php?action=add" class="add-button">Thêm khách hàng</a>
     <table class="styled-table">
         <thead>
             <tr>

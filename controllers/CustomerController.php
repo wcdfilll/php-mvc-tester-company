@@ -29,6 +29,7 @@ class CustomerController {
             $customer = new Customer(id: null, name: $name, email: $email, address: $address);
             
             $this->customerDB->insertCustomer(customer: $customer);
+            header(header: 'Location: index.php?controller=customer&action=list');
         } else {
             require_once('views/add.php');
         }
