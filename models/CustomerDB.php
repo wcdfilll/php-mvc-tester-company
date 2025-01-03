@@ -9,7 +9,7 @@ class CustomerDB{
     public function getAllCustomers(): array{
         $stmt = $this->conn->prepare(query: "SELECT * FROM customers");
         $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC); //get from SQL server through PDO Driver
     }
 
     public function getCustomerById($id): Customer|null {

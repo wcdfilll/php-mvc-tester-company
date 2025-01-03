@@ -44,6 +44,7 @@
                     <td>
                         <a href="index.php?action=edit&id=<?php echo htmlspecialchars(string: $customer['id']);?>">Sửa</a>
                         <a href="index.php?action=delete&id=<?php echo htmlspecialchars(string: $customer['id']);?>">Xoá</a>
+                        <a href="index.php?action=view&id=<?php echo htmlspecialchars(string: $customer['id']);?>">Xem</a>
                     </td>
                 </tr>
                 <?php endforeach; ?>
