@@ -5,7 +5,7 @@ A demo repository for a company system built with **PHP**, **MVC (Model-View-Con
 ---
 
 ## 📋 Features
-This project includes the following functionalities:
+### This project includes the following functionalities:
 - **Class `Customer`**: Represents a customer.
 - **Class `CustomerDB`**: Provides methods to interact with the database.
 
