@@ -1,6 +1,6 @@
 # PHP MVC Tester Company
 
-A demo repository for a company system built with **PHP**, **MVC (Model-View-Controller)** architecture, and **SQL** to manage customers efficiently.
+A demo repo for a company system built with **PHP**, **MVC (Model-View-Controller)** architecture, and **SQL** to manage customers efficiently.
 
 ---
 
