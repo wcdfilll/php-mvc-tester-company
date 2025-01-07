@@ -29,7 +29,9 @@ To test this project, ensure you have the following environment configured:
    `PHP 8.1+`
 
 3. **Database**:  
-   **MariaDB/MySQL** Server  
+   **MariaDB/MySQL** Server
+   - localhost:3306
+   - dbname: qlkh_tester_aht  
    - Username: `root`  
    - Password: *(leave empty)*
 
