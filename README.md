@@ -31,7 +31,7 @@ To test this project, ensure you have the following environment configured:
 3. **Database**:  
    **MariaDB/MySQL** Server
    - localhost:3306
-   - dbname: qlkh_tester_aht  
+   - dbname: `qlkh_tester_aht`  
    - Username: `root`  
    - Password: *(leave empty)*
 
